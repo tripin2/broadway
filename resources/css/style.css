@@ -1,12 +1,15 @@
+/* html elements section */
+/* sets default font and alignment of elements on the page */
 html, body {
-  font-family: Helvetica, sans-serif;
+  font-family: Helvetica;
   text-align: center;
 }
 
 h1 {
   font-size: 70px;
   font-weight: bold;
-  color: White
+  color: White;
+  margin: 20px;
 }
 
 h2 {
@@ -27,6 +30,7 @@ h4 {
 
 p {
   font-size: 14px;
+  font-weight: normal;
 }
 
 a {
@@ -34,22 +38,29 @@ a {
   color: White
 }
 
-em {
-  text-decoration: underline;
-}
-
+/* classes section */
+/* header class that sets the background image for header elements and one
+    element h4 on the page below */
 .header {
   background-image: url("../images/the-flatiron-building.png");
   background-position: center;
 }
 
+/* wrapper class that limits the width of the view */
 .wrapper {
   width: 1800px;
 }
 
+/* footer class for text in the footer */
 .footer {
   text-align: left;
-  font-size: 11px;
   color: White;
   background-color: dimgray;
+}
+
+/* class to make links in footer stand out */
+.emphasized {
+  font-size: 18px;
+  text-decoration: underline;
+  font-style: normal;
 }
